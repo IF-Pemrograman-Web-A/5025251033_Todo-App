@@ -40,7 +40,7 @@
 
 .status-p{
     font-weight: bold;
-    color: yellow;
+    color: orange;
 }
 
 .status-c{
@@ -81,4 +81,37 @@
     text-align: center;
     font-size: 20px;
     margin-top: 20px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+.dark-mode .tasks,
+.dark-mode .detail {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .task-button {
+    background-color: #333333;
+    color: #f2f2f2;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #2b2b2b;
+    color: #f2f2f2;
+    border: 1px solid #555;
+}
+
+.dark-mode button {
+    color: #f2f2f2;
+}
+
+#dark-mode-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

@@ -6,54 +6,35 @@
     </head>
     <body>
         <h1 class = "tophead">To Do List</h1>
+        <button id="dark-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
         <div class = "container">
              <div class = "tasks">
                 <h2>Tasks Title: </h2>
-                <ul>
-                    <li><button class="task-button">Programming Assignment - 14/09/26<br><p>Bikin Tugasnya bang</p><p class = status-p>pending</p></p></button>
-                        </li>
-                    <li><button class="task-button">Graph Theory Assignment - 14/09/26<br><p>Ayo masa gabis gitu doang</p><p class = status-c>completed</p></p></button>
-                        </li>
-                    <li><button class="task-button">Test - DD/MM/YY<br><p>Ini adalah detail dari tugas test</p><p class = status-f>failed</p></p></button>
-                        </li>
+                <ul id="task-list">
                 </ul>
                 <p>Click on a task to view its details.</p>
             </div>
             <div class = "detail">
-                <h2>Task Details: Test</h2>
-                <p>Click on a task to view its details. Ini tampilan kalo dibaca detailsnya, misal bisa masukin apa aja tasknya dsb.</p>
-                <div class = "button-container">
-                    <button class = "d-button">Done</button>
-                    <button class = "f-button">Fail</button>
-                    <button class = "p-button">Pending</button>
-                </div>
-                <h2>Task Editor:</h2>
-                <form class = "task-form">
-                    <label for = "task-title">Task Title:</label>
-                    <input type = "text" id = "task-title" name = "task-title">
-                    <br>
-                    <label for = "task-details">Task Details:</label>
-                    <textarea id = "task-details" name = "task-details"></textarea>
-                    <br>
-                    <button type = "submit" class = "save-button">Save Task</button>
-                </form>
+                <h2 id="task-title">Task Details: Test</h2>
+                <p id="task-details">Click on a task to view its details. Ini tampilan kalo dibaca detailsnya, misal bisa masukin apa aja tasknya dsb.</p>
             </div>
         </div>
         <div class = "Add-Task">
                 <h2>Add Task</h2>
                 <h2>New Task:</h2>
                 <form class = "task-form">
-                    <label for = "task-title">Task Title:</label>
-                    <input type = "text" id = "task-title" name = "task-title">
+                    <label for = "new-task-title">Task Title:</label>
+                    <input type = "text" id = "new-task-title" name = "task-title">
                     <br>
-                    <label for = "task-details">Task Details:</label>
-                    <textarea id = "task-details" name = "task-details"></textarea>
+                    <label for = "new-task-details">Task Details:</label>
+                    <textarea id = "new-task-details" name = "task-details"></textarea>
                     <br>
-                    <button type = "submit" class = "save-button">Add Task</button>
+                    <button type="button" onclick="addTask()">Add Task</button>
                 </form>
             </div>
         <footer class="footer">
             <p>- This is footer - Hasil To Do List Sementara PWEB E01a - This is footer -</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
